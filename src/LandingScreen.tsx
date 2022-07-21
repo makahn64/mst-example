@@ -4,6 +4,7 @@ import { ThemedButton } from './components/ThemedButton';
 import { observer } from 'mobx-react-lite';
 import { useApplicationState } from './state/MSTProvider';
 import logo from './logo.svg';
+import { ExpandableBox } from './components/ExpandingBox';
 
 const SmallSquare = () =>  <div style={{ minWidth: '120px', height: '120px', backgroundColor: 'teal', margin: '10px'}}/>
 const BigSquare = () =>  <div style={{ minWidth: '240px', height: '240px', backgroundColor: 'red', margin: '10px'}}/>
@@ -20,8 +21,11 @@ export const LandingScreen = observer(() => {
         <header className="App-header">
           <img src={logo} className={`App-logo App-logo-${state.atomDirection}`} alt="logo" />
           <div style={{ display: 'flex', flexDirection: 'row', maxWidth: '60vw', border: '2px solid red', flexWrap: 'wrap'}}>
+          <ExpandableBox color='salmon'/>
+          <ExpandableBox color='dodgerblue'/>
           <SmallSquare />
           <WideSquare />
+          <ExpandableBox />
           <VeryWideSquare />
           <BigSquare />
           <SmallSquare />
