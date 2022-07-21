@@ -16,6 +16,11 @@ export const LandingScreen = observer(() => {
           <div style={{ display: 'flex', flexDirection: 'row'}}>
           <Button label='Reverse' onClick={state.reverseAtom} />
           <ThemedButton label="Darken" onClick={state.button.darkenBackground} />
+          <div style={{ width: '250px', height: '120px', backgroundColor: 'teal', margin: '10px'}}/>
+          <div style={{ width: '250px', height: '120px', backgroundColor: 'teal', margin: '10px'}}/>
+          <div style={{ width: '250px', height: '120px', backgroundColor: 'teal', margin: '10px'}}/>
+          <div style={{ width: '250px', height: '120px', backgroundColor: 'teal', margin: '10px'}}/>
+
           <ThemedButton label="Thicken" onClick={state.button.thickenBorder} />
           </div>
         </header>
